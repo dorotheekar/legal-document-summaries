@@ -1,17 +1,24 @@
-# LEGAL TEXT SUMMARIZATION MODEL
+## Legal Text Summarization Model Training
 
-## Overview
+### Overview
 
-This project focuses on text summarization of legal documents using the BART (Bidirectional and Auto-Regressive Transformers) model. The goal is to generate concise summaries from given input texts.
+> This project focuses on text summarization of legal documents using the BART (Bidirectional and Auto-Regressive Transformers) model. The goal is to generate concise summaries from given input texts.
+<!-- toc -->
 
-## Key Components
+### Table of contents
+
+- [Key Components](#key-components)
+- [Projet structure](#projet-structure)
+- [Getting started](#getting-started)
+
+### Key Components
 
 1. **Datasets:**
-   - "dataset.json" and "open_source_dataset.json".
+   - ```dataset.json``` and ```open_source_dataset.json```
    - Each data point includes original text, reference summary, and a unique identifier (uid).
 
 2. **Model:**
-   - Used the "facebook/bart-base" pre-trained BART model.
+   - Used the ```facebook/bart-base``` pre-trained BART model.
    - Approximately 139 million parameters.
 
 3. **Training Process:**
@@ -23,8 +30,8 @@ This project focuses on text summarization of legal documents using the BART (Bi
    - Summarization performed using the trained model.
    - Inference time details not provided.
 
-## Project Structure
-
+### Project Structure
+```
 / code_source
 │ infer_summaries.py
 │ README.md
@@ -44,9 +51,9 @@ This project focuses on text summarization of legal documents using the BART (Bi
 │ generated_summaries_test_set.json
 │ test_data.json
 └ train_data.json
+```
 
-
-## Getting Started
+### Getting Started
 
 1. Install dependencies : The model was developed and tested on Python 3.10.11, you can install all the dependencies using : 
 ```
