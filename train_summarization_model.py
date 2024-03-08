@@ -10,12 +10,12 @@ from transformers import AdamW, BartTokenizer, BartForConditionalGeneration
 from sklearn.model_selection import train_test_split
 
 # Path to file of data
-data_path_airbus = "./data/dataset.json"
+data_path = "./data/dataset.json"
 data_path_open = "./data/open_source_dataset.json"
 
 ## LOADING DATA
-with open(data_path_airbus, "r") as fichier1:
-    data_airbus = json.load(fichier1)
+with open(data_path, "r") as fichier1:
+    data = json.load(fichier1)
 
 with open(data_path_open, "r") as fichier2:
     data_open = json.load(fichier2)
@@ -34,7 +34,7 @@ for key, value in data_open.items():
 
 ## DATA CONCATENATION
 # Copy of data to avoid changing source
-data_concatenee = data_airbus.copy()
+data_concatenee = data.copy()
 data_concatenee.update(data_open_extracted)
 
 # Path to created file
