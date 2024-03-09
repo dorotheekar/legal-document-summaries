@@ -14,7 +14,7 @@
 ### Key Components
 
 1. **Datasets:**
-   - ```dataset.json``` and ```open_source_dataset.json```
+   - ```dataset.json``` and ```open_source_dataset.json``` de forme 
    - Each data point includes original text, reference summary, and a unique identifier (uid).
 
 2. **Model:**
